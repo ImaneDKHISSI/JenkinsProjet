@@ -1,0 +1,40 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') { // Cloner le dépôt GitHub
+            steps {
+                git url: 'https://github.com/ImaneDKHISSI/JenkinsProjet.git', branch: 'main'
+            }
+        }
+        stage('Restore Dependencies') { // Restaurer les dépendances
+            steps {
+                sh 'dotnet restore ProjetJenkins.sln' // Restaure les dépendances pour la solution .sln
+            }
+        }
+        stage('Build') { // Construire le projet
+            steps {
+                sh 'dotnet build ProjetJenkins.sln --no-restore' // Compile le projet sans restaurer les dépendances
+            }
+        }
+        stage('Test') { // Exécuter les tests unitaires avec XUnit
+            steps {
+                sh 'dotnet test TestUnitaire/TestUnitaire.csproj --no-build' // Exécute les tests unitaires
+            }
+        }
+        stage('Publish') { // Publier les artefacts (facultatif)
+            steps {
+                sh 'dotnet publish ProjetJenkins/ProjetJenkins.csproj -c Release -o out' // Publie les binaires
+            }
+        }
+    }
+
+    post {
+        success {
+            echo 'Pipeline exécuté avec succès !'
+        }
+        failure {
+            echo 'Le pipeline a échoué.'
+        }
+    }
+}
