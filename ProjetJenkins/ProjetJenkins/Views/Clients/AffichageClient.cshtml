@@ -1,0 +1,35 @@
+﻿@model List<Client>
+
+@{
+    ViewData["Title"] = "Liste des clients";
+    Layout = "_Layout";
+}
+
+<link href="css/Index.css" rel="stylesheet" />
+
+
+<table class="table table-weight">
+    <tr>
+        <th>Id</th>
+        <th>Nom</th>
+        <th>Prénom</th>
+        <th>Tel</th>
+        <th>CIN</th>
+        <th>Action</th>
+    </tr>
+    @foreach (Client c in Model)
+    {
+        <tr>
+            <td>@c.Id</td>
+            <td>@c.Nom</td>
+            <td>@c.Prenom</td>
+            <td>@c.Tel</td>
+            <td>@c.CIN</td>
+            <td>
+                <a class="btn btn-outline-warning" asp-controller="Clients" asp-action="Update" asp-route-id="@c.Id">Modifier</a>
+                <a onclick="return confirm('Vous êtes sur de supprimer')" class=" btn btn-outline-danger" asp-controller="Clients" asp-action="Delete" asp-route-id="@c.Id">Supprimer</a>
+            </td>
+        </tr>
+    }
+
+</table>

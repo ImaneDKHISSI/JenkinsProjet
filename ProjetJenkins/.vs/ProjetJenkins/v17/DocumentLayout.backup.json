@@ -1,0 +1,397 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\HP\\Documents\\imane\\5\u00E9me ann\u00E9e\\Qaulit\u00E9 Logiciel\\ProjetJenkins\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2E4B6E8D-D200-4865-8C77-D4F222E49C31}|ProjetJenkins\\ProjetJenkins.csproj|c:\\users\\hp\\documents\\imane\\5\u00E9me ann\u00E9e\\qaulit\u00E9 logiciel\\projetjenkins\\projetjenkins\\projetjenkins.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2E4B6E8D-D200-4865-8C77-D4F222E49C31}|ProjetJenkins\\ProjetJenkins.csproj|solutionrelative:projetjenkins\\projetjenkins.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61738231-DFA9-489F-A64C-7D4AD39DA082}|TestUnitaire\\TestUnitaire.csproj|c:\\users\\hp\\documents\\imane\\5\u00E9me ann\u00E9e\\qaulit\u00E9 logiciel\\projetjenkins\\testunitaire\\testunitaire.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{61738231-DFA9-489F-A64C-7D4AD39DA082}|TestUnitaire\\TestUnitaire.csproj|solutionrelative:testunitaire\\testunitaire.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E4B6E8D-D200-4865-8C77-D4F222E49C31}|ProjetJenkins\\ProjetJenkins.csproj|c:\\users\\hp\\documents\\imane\\5\u00E9me ann\u00E9e\\qaulit\u00E9 logiciel\\projetjenkins\\projetjenkins\\controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E4B6E8D-D200-4865-8C77-D4F222E49C31}|ProjetJenkins\\ProjetJenkins.csproj|solutionrelative:projetjenkins\\controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E4B6E8D-D200-4865-8C77-D4F222E49C31}|ProjetJenkins\\ProjetJenkins.csproj|c:\\users\\hp\\documents\\imane\\5\u00E9me ann\u00E9e\\qaulit\u00E9 logiciel\\projetjenkins\\projetjenkins\\views\\clients\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2E4B6E8D-D200-4865-8C77-D4F222E49C31}|ProjetJenkins\\ProjetJenkins.csproj|solutionrelative:projetjenkins\\views\\clients\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E4B6E8D-D200-4865-8C77-D4F222E49C31}|ProjetJenkins\\ProjetJenkins.csproj|c:\\users\\hp\\documents\\imane\\5\u00E9me ann\u00E9e\\qaulit\u00E9 logiciel\\projetjenkins\\projetjenkins\\views\\clients\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2E4B6E8D-D200-4865-8C77-D4F222E49C31}|ProjetJenkins\\ProjetJenkins.csproj|solutionrelative:projetjenkins\\views\\clients\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E4B6E8D-D200-4865-8C77-D4F222E49C31}|ProjetJenkins\\ProjetJenkins.csproj|c:\\users\\hp\\documents\\imane\\5\u00E9me ann\u00E9e\\qaulit\u00E9 logiciel\\projetjenkins\\projetjenkins\\views\\clients\\affichageclient.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2E4B6E8D-D200-4865-8C77-D4F222E49C31}|ProjetJenkins\\ProjetJenkins.csproj|solutionrelative:projetjenkins\\views\\clients\\affichageclient.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E4B6E8D-D200-4865-8C77-D4F222E49C31}|ProjetJenkins\\ProjetJenkins.csproj|c:\\users\\hp\\documents\\imane\\5\u00E9me ann\u00E9e\\qaulit\u00E9 logiciel\\projetjenkins\\projetjenkins\\wwwroot\\css\\form-style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{2E4B6E8D-D200-4865-8C77-D4F222E49C31}|ProjetJenkins\\ProjetJenkins.csproj|solutionrelative:projetjenkins\\wwwroot\\css\\form-style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E4B6E8D-D200-4865-8C77-D4F222E49C31}|ProjetJenkins\\ProjetJenkins.csproj|c:\\users\\hp\\documents\\imane\\5\u00E9me ann\u00E9e\\qaulit\u00E9 logiciel\\projetjenkins\\projetjenkins\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E4B6E8D-D200-4865-8C77-D4F222E49C31}|ProjetJenkins\\ProjetJenkins.csproj|solutionrelative:projetjenkins\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E4B6E8D-D200-4865-8C77-D4F222E49C31}|ProjetJenkins\\ProjetJenkins.csproj|c:\\users\\hp\\documents\\imane\\5\u00E9me ann\u00E9e\\qaulit\u00E9 logiciel\\projetjenkins\\projetjenkins\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2E4B6E8D-D200-4865-8C77-D4F222E49C31}|ProjetJenkins\\ProjetJenkins.csproj|solutionrelative:projetjenkins\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E4B6E8D-D200-4865-8C77-D4F222E49C31}|ProjetJenkins\\ProjetJenkins.csproj|c:\\users\\hp\\documents\\imane\\5\u00E9me ann\u00E9e\\qaulit\u00E9 logiciel\\projetjenkins\\projetjenkins\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2E4B6E8D-D200-4865-8C77-D4F222E49C31}|ProjetJenkins\\ProjetJenkins.csproj|solutionrelative:projetjenkins\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E4B6E8D-D200-4865-8C77-D4F222E49C31}|ProjetJenkins\\ProjetJenkins.csproj|c:\\users\\hp\\documents\\imane\\5\u00E9me ann\u00E9e\\qaulit\u00E9 logiciel\\projetjenkins\\projetjenkins\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2E4B6E8D-D200-4865-8C77-D4F222E49C31}|ProjetJenkins\\ProjetJenkins.csproj|solutionrelative:projetjenkins\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E4B6E8D-D200-4865-8C77-D4F222E49C31}|ProjetJenkins\\ProjetJenkins.csproj|c:\\users\\hp\\documents\\imane\\5\u00E9me ann\u00E9e\\qaulit\u00E9 logiciel\\projetjenkins\\projetjenkins\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2E4B6E8D-D200-4865-8C77-D4F222E49C31}|ProjetJenkins\\ProjetJenkins.csproj|solutionrelative:projetjenkins\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E4B6E8D-D200-4865-8C77-D4F222E49C31}|ProjetJenkins\\ProjetJenkins.csproj|c:\\users\\hp\\documents\\imane\\5\u00E9me ann\u00E9e\\qaulit\u00E9 logiciel\\projetjenkins\\projetjenkins\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2E4B6E8D-D200-4865-8C77-D4F222E49C31}|ProjetJenkins\\ProjetJenkins.csproj|solutionrelative:projetjenkins\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E4B6E8D-D200-4865-8C77-D4F222E49C31}|ProjetJenkins\\ProjetJenkins.csproj|c:\\users\\hp\\documents\\imane\\5\u00E9me ann\u00E9e\\qaulit\u00E9 logiciel\\projetjenkins\\projetjenkins\\mapper\\clientmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E4B6E8D-D200-4865-8C77-D4F222E49C31}|ProjetJenkins\\ProjetJenkins.csproj|solutionrelative:projetjenkins\\mapper\\clientmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E4B6E8D-D200-4865-8C77-D4F222E49C31}|ProjetJenkins\\ProjetJenkins.csproj|c:\\users\\hp\\documents\\imane\\5\u00E9me ann\u00E9e\\qaulit\u00E9 logiciel\\projetjenkins\\projetjenkins\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E4B6E8D-D200-4865-8C77-D4F222E49C31}|ProjetJenkins\\ProjetJenkins.csproj|solutionrelative:projetjenkins\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E4B6E8D-D200-4865-8C77-D4F222E49C31}|ProjetJenkins\\ProjetJenkins.csproj|c:\\users\\hp\\documents\\imane\\5\u00E9me ann\u00E9e\\qaulit\u00E9 logiciel\\projetjenkins\\projetjenkins\\migrations\\mycontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E4B6E8D-D200-4865-8C77-D4F222E49C31}|ProjetJenkins\\ProjetJenkins.csproj|solutionrelative:projetjenkins\\migrations\\mycontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E4B6E8D-D200-4865-8C77-D4F222E49C31}|ProjetJenkins\\ProjetJenkins.csproj|c:\\users\\hp\\documents\\imane\\5\u00E9me ann\u00E9e\\qaulit\u00E9 logiciel\\projetjenkins\\projetjenkins\\migrations\\20241221152600_creationdb.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E4B6E8D-D200-4865-8C77-D4F222E49C31}|ProjetJenkins\\ProjetJenkins.csproj|solutionrelative:projetjenkins\\migrations\\20241221152600_creationdb.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E4B6E8D-D200-4865-8C77-D4F222E49C31}|ProjetJenkins\\ProjetJenkins.csproj|c:\\users\\hp\\documents\\imane\\5\u00E9me ann\u00E9e\\qaulit\u00E9 logiciel\\projetjenkins\\projetjenkins\\models\\mycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E4B6E8D-D200-4865-8C77-D4F222E49C31}|ProjetJenkins\\ProjetJenkins.csproj|solutionrelative:projetjenkins\\models\\mycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E4B6E8D-D200-4865-8C77-D4F222E49C31}|ProjetJenkins\\ProjetJenkins.csproj|c:\\users\\hp\\documents\\imane\\5\u00E9me ann\u00E9e\\qaulit\u00E9 logiciel\\projetjenkins\\projetjenkins\\viewmodels\\clientaddvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E4B6E8D-D200-4865-8C77-D4F222E49C31}|ProjetJenkins\\ProjetJenkins.csproj|solutionrelative:projetjenkins\\viewmodels\\clientaddvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E4B6E8D-D200-4865-8C77-D4F222E49C31}|ProjetJenkins\\ProjetJenkins.csproj|c:\\users\\hp\\documents\\imane\\5\u00E9me ann\u00E9e\\qaulit\u00E9 logiciel\\projetjenkins\\projetjenkins\\viewmodels\\clientupdatevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E4B6E8D-D200-4865-8C77-D4F222E49C31}|ProjetJenkins\\ProjetJenkins.csproj|solutionrelative:projetjenkins\\viewmodels\\clientupdatevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\HP\\Documents\\imane\\5\u00E9me ann\u00E9e\\Qaulit\u00E9 Logiciel\\ProjetJenkins\\ProjetJenkins\\Migrations\\20241221152600_CreationDB.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ProjetJenkins\\Migrations\\20241221152600_CreationDB.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TestUnitaire",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\imane\\5\u00E9me ann\u00E9e\\Qaulit\u00E9 Logiciel\\ProjetJenkins\\TestUnitaire\\TestUnitaire.csproj",
+              "RelativeDocumentMoniker": "TestUnitaire\\TestUnitaire.csproj",
+              "ToolTip": "C:\\Users\\HP\\Documents\\imane\\5\u00E9me ann\u00E9e\\Qaulit\u00E9 Logiciel\\ProjetJenkins\\TestUnitaire\\TestUnitaire.csproj",
+              "RelativeToolTip": "TestUnitaire\\TestUnitaire.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-21T17:30:24.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClientsController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\imane\\5\u00E9me ann\u00E9e\\Qaulit\u00E9 Logiciel\\ProjetJenkins\\ProjetJenkins\\Controllers\\ClientsController.cs",
+              "RelativeDocumentMoniker": "ProjetJenkins\\Controllers\\ClientsController.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\imane\\5\u00E9me ann\u00E9e\\Qaulit\u00E9 Logiciel\\ProjetJenkins\\ProjetJenkins\\Controllers\\ClientsController.cs",
+              "RelativeToolTip": "ProjetJenkins\\Controllers\\ClientsController.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAUwGcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T15:27:38.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AffichageClient.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\imane\\5\u00E9me ann\u00E9e\\Qaulit\u00E9 Logiciel\\ProjetJenkins\\ProjetJenkins\\Views\\Clients\\AffichageClient.cshtml",
+              "RelativeDocumentMoniker": "ProjetJenkins\\Views\\Clients\\AffichageClient.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Documents\\imane\\5\u00E9me ann\u00E9e\\Qaulit\u00E9 Logiciel\\ProjetJenkins\\ProjetJenkins\\Views\\Clients\\AffichageClient.cshtml",
+              "RelativeToolTip": "ProjetJenkins\\Views\\Clients\\AffichageClient.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-21T15:30:42.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Add.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\imane\\5\u00E9me ann\u00E9e\\Qaulit\u00E9 Logiciel\\ProjetJenkins\\ProjetJenkins\\Views\\Clients\\Add.cshtml",
+              "RelativeDocumentMoniker": "ProjetJenkins\\Views\\Clients\\Add.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Documents\\imane\\5\u00E9me ann\u00E9e\\Qaulit\u00E9 Logiciel\\ProjetJenkins\\ProjetJenkins\\Views\\Clients\\Add.cshtml",
+              "RelativeToolTip": "ProjetJenkins\\Views\\Clients\\Add.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAACwAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-21T15:30:19.655Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProjetJenkins",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\imane\\5\u00E9me ann\u00E9e\\Qaulit\u00E9 Logiciel\\ProjetJenkins\\ProjetJenkins\\ProjetJenkins.csproj",
+              "RelativeDocumentMoniker": "ProjetJenkins\\ProjetJenkins.csproj",
+              "ToolTip": "C:\\Users\\HP\\Documents\\imane\\5\u00E9me ann\u00E9e\\Qaulit\u00E9 Logiciel\\ProjetJenkins\\ProjetJenkins\\ProjetJenkins.csproj",
+              "RelativeToolTip": "ProjetJenkins\\ProjetJenkins.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-21T15:26:52.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\imane\\5\u00E9me ann\u00E9e\\Qaulit\u00E9 Logiciel\\ProjetJenkins\\ProjetJenkins\\Program.cs",
+              "RelativeDocumentMoniker": "ProjetJenkins\\Program.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\imane\\5\u00E9me ann\u00E9e\\Qaulit\u00E9 Logiciel\\ProjetJenkins\\ProjetJenkins\\Program.cs",
+              "RelativeToolTip": "ProjetJenkins\\Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB8AAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T15:25:31.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\imane\\5\u00E9me ann\u00E9e\\Qaulit\u00E9 Logiciel\\ProjetJenkins\\ProjetJenkins\\Views\\Clients\\Update.cshtml",
+              "RelativeDocumentMoniker": "ProjetJenkins\\Views\\Clients\\Update.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Documents\\imane\\5\u00E9me ann\u00E9e\\Qaulit\u00E9 Logiciel\\ProjetJenkins\\ProjetJenkins\\Views\\Clients\\Update.cshtml",
+              "RelativeToolTip": "ProjetJenkins\\Views\\Clients\\Update.cshtml",
+              "ViewState": "AgIAACkAAAAAAAAAAAAAADIAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-21T15:30:50.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\imane\\5\u00E9me ann\u00E9e\\Qaulit\u00E9 Logiciel\\ProjetJenkins\\ProjetJenkins\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "ProjetJenkins\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Documents\\imane\\5\u00E9me ann\u00E9e\\Qaulit\u00E9 Logiciel\\ProjetJenkins\\ProjetJenkins\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "ProjetJenkins\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF4AAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-21T16:01:31.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "form-style.css",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\imane\\5\u00E9me ann\u00E9e\\Qaulit\u00E9 Logiciel\\ProjetJenkins\\ProjetJenkins\\wwwroot\\css\\form-style.css",
+              "RelativeDocumentMoniker": "ProjetJenkins\\wwwroot\\css\\form-style.css",
+              "ToolTip": "C:\\Users\\HP\\Documents\\imane\\5\u00E9me ann\u00E9e\\Qaulit\u00E9 Logiciel\\ProjetJenkins\\ProjetJenkins\\wwwroot\\css\\form-style.css",
+              "RelativeToolTip": "ProjetJenkins\\wwwroot\\css\\form-style.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-21T16:14:18.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\imane\\5\u00E9me ann\u00E9e\\Qaulit\u00E9 Logiciel\\ProjetJenkins\\ProjetJenkins\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "ProjetJenkins\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Documents\\imane\\5\u00E9me ann\u00E9e\\Qaulit\u00E9 Logiciel\\ProjetJenkins\\ProjetJenkins\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "ProjetJenkins\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-21T16:02:59.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\imane\\5\u00E9me ann\u00E9e\\Qaulit\u00E9 Logiciel\\ProjetJenkins\\ProjetJenkins\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "ProjetJenkins\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Documents\\imane\\5\u00E9me ann\u00E9e\\Qaulit\u00E9 Logiciel\\ProjetJenkins\\ProjetJenkins\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "ProjetJenkins\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-21T16:03:01.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\imane\\5\u00E9me ann\u00E9e\\Qaulit\u00E9 Logiciel\\ProjetJenkins\\ProjetJenkins\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "ProjetJenkins\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Documents\\imane\\5\u00E9me ann\u00E9e\\Qaulit\u00E9 Logiciel\\ProjetJenkins\\ProjetJenkins\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "ProjetJenkins\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-21T16:03:12.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\imane\\5\u00E9me ann\u00E9e\\Qaulit\u00E9 Logiciel\\ProjetJenkins\\ProjetJenkins\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "ProjetJenkins\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Documents\\imane\\5\u00E9me ann\u00E9e\\Qaulit\u00E9 Logiciel\\ProjetJenkins\\ProjetJenkins\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "ProjetJenkins\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-21T16:03:13.811Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MyContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\imane\\5\u00E9me ann\u00E9e\\Qaulit\u00E9 Logiciel\\ProjetJenkins\\ProjetJenkins\\Migrations\\MyContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "ProjetJenkins\\Migrations\\MyContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\imane\\5\u00E9me ann\u00E9e\\Qaulit\u00E9 Logiciel\\ProjetJenkins\\ProjetJenkins\\Migrations\\MyContextModelSnapshot.cs",
+              "RelativeToolTip": "ProjetJenkins\\Migrations\\MyContextModelSnapshot.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAD4vwUAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T15:32:13.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "20241221152600_CreationDB.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\imane\\5\u00E9me ann\u00E9e\\Qaulit\u00E9 Logiciel\\ProjetJenkins\\ProjetJenkins\\Migrations\\20241221152600_CreationDB.Designer.cs",
+              "RelativeDocumentMoniker": "ProjetJenkins\\Migrations\\20241221152600_CreationDB.Designer.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\imane\\5\u00E9me ann\u00E9e\\Qaulit\u00E9 Logiciel\\ProjetJenkins\\ProjetJenkins\\Migrations\\20241221152600_CreationDB.Designer.cs",
+              "RelativeToolTip": "ProjetJenkins\\Migrations\\20241221152600_CreationDB.Designer.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAD4vwYAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T15:32:05.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ClientMapper.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\imane\\5\u00E9me ann\u00E9e\\Qaulit\u00E9 Logiciel\\ProjetJenkins\\ProjetJenkins\\Mapper\\ClientMapper.cs",
+              "RelativeDocumentMoniker": "ProjetJenkins\\Mapper\\ClientMapper.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\imane\\5\u00E9me ann\u00E9e\\Qaulit\u00E9 Logiciel\\ProjetJenkins\\ProjetJenkins\\Mapper\\ClientMapper.cs",
+              "RelativeToolTip": "ProjetJenkins\\Mapper\\ClientMapper.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAgwBAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T15:27:22.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Client.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\imane\\5\u00E9me ann\u00E9e\\Qaulit\u00E9 Logiciel\\ProjetJenkins\\ProjetJenkins\\Models\\Client.cs",
+              "RelativeDocumentMoniker": "ProjetJenkins\\Models\\Client.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\imane\\5\u00E9me ann\u00E9e\\Qaulit\u00E9 Logiciel\\ProjetJenkins\\ProjetJenkins\\Models\\Client.cs",
+              "RelativeToolTip": "ProjetJenkins\\Models\\Client.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T15:22:26.867Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MyContext.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\imane\\5\u00E9me ann\u00E9e\\Qaulit\u00E9 Logiciel\\ProjetJenkins\\ProjetJenkins\\Models\\MyContext.cs",
+              "RelativeDocumentMoniker": "ProjetJenkins\\Models\\MyContext.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\imane\\5\u00E9me ann\u00E9e\\Qaulit\u00E9 Logiciel\\ProjetJenkins\\ProjetJenkins\\Models\\MyContext.cs",
+              "RelativeToolTip": "ProjetJenkins\\Models\\MyContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T15:23:02.4Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ClientUpdateVM.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\imane\\5\u00E9me ann\u00E9e\\Qaulit\u00E9 Logiciel\\ProjetJenkins\\ProjetJenkins\\ViewModels\\ClientUpdateVM.cs",
+              "RelativeDocumentMoniker": "ProjetJenkins\\ViewModels\\ClientUpdateVM.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\imane\\5\u00E9me ann\u00E9e\\Qaulit\u00E9 Logiciel\\ProjetJenkins\\ProjetJenkins\\ViewModels\\ClientUpdateVM.cs",
+              "RelativeToolTip": "ProjetJenkins\\ViewModels\\ClientUpdateVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T15:31:12.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ClientAddVM.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\imane\\5\u00E9me ann\u00E9e\\Qaulit\u00E9 Logiciel\\ProjetJenkins\\ProjetJenkins\\ViewModels\\ClientAddVM.cs",
+              "RelativeDocumentMoniker": "ProjetJenkins\\ViewModels\\ClientAddVM.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\imane\\5\u00E9me ann\u00E9e\\Qaulit\u00E9 Logiciel\\ProjetJenkins\\ProjetJenkins\\ViewModels\\ClientAddVM.cs",
+              "RelativeToolTip": "ProjetJenkins\\ViewModels\\ClientAddVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T15:31:18.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "20241221152600_CreationDB.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\imane\\5\u00E9me ann\u00E9e\\Qaulit\u00E9 Logiciel\\ProjetJenkins\\ProjetJenkins\\Migrations\\20241221152600_CreationDB.cs",
+              "RelativeDocumentMoniker": "ProjetJenkins\\Migrations\\20241221152600_CreationDB.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\imane\\5\u00E9me ann\u00E9e\\Qaulit\u00E9 Logiciel\\ProjetJenkins\\ProjetJenkins\\Migrations\\20241221152600_CreationDB.cs",
+              "RelativeToolTip": "ProjetJenkins\\Migrations\\20241221152600_CreationDB.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T15:26:01.22Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
