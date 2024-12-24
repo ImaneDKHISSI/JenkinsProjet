@@ -2,47 +2,24 @@ pipeline {
     agent {
         docker {
             image 'mcr.microsoft.com/dotnet/sdk:8.0'
+            args '-v /var/run/docker.sock:/var/run/docker.sock'
         }
     }
-
     stages {
-        stage('Checkout') { 
+        stage('Build') {
             steps {
-                git url: 'https://github.com/ImaneDKHISSI/JenkinsProjet.git', branch: 'main'
+                sh 'dotnet build'
             }
         }
-
-        stage('Restore Dependencies') { 
+        stage('Test') {
             steps {
-                sh 'dotnet restore ProjetJenkins.sln'
+                sh 'dotnet test'
             }
         }
-
-        stage('Build') { 
+        stage('Docker Build') {
             steps {
-                sh 'dotnet build ProjetJenkins.sln --no-restore'
+                sh 'docker build -t my-aspnet-app .'
             }
-        }
-
-        stage('Test') { 
-            steps {
-                sh 'dotnet test TestUnitaire/TestUnitaire.csproj --no-build'
-            }
-        }
-
-        stage('Publish') { 
-            steps {
-                sh 'dotnet publish ProjetJenkins/ProjetJenkins.csproj -c Release -o out'
-            }
-        }
-    }
-
-    post {
-        success {
-            echo 'Pipeline exécuté avec succès !'
-        }
-        failure {
-            echo 'Le pipeline a échoué.'
         }
     }
 }
