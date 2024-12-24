@@ -9,34 +9,42 @@ pipeline {
         }
         stage('Build') {
             steps {
-                // Compiler le projet .NET
-                sh 'dotnet build'
+                // Construire le fichier ProjetJenkins.csproj
+                dir('ProjetJenkins/ProjetJenkins') {
+                    sh 'dotnet build ProjetJenkins.csproj'
+                }
             }
         }
         stage('Test') {
             steps {
-                // Exécuter les tests unitaires
-                sh 'dotnet test'
+                // Exécuter les tests si le projet en contient
+                dir('ProjetJenkins/ProjetJenkins') {
+                    sh 'dotnet test ProjetJenkins.csproj'
+                }
             }
         }
         stage('Docker Build') {
             steps {
                 // Construire une image Docker pour l'application
-                sh 'docker build -t monprojet-image .'
+                dir('ProjetJenkins/ProjetJenkins') {
+                    sh 'docker build -t monprojet-image .'
+                }
             }
         }
         stage('Docker Push') {
             steps {
                 // Pousser l'image sur Docker Hub
                 withDockerRegistry([credentialsId: 'docker-hub-credentials', url: '']) {
-                    sh 'docker push monutilisateur/monprojet-image'
+                    dir('ProjetJenkins/ProjetJenkins') {
+                        sh 'docker push monutilisateur/monprojet-image'
+                    }
                 }
             }
         }
         stage('Deploy') {
             steps {
                 // Déployer l'application sur un serveur distant
-                sh 'scp -i clé.pem monprojet-image.tar.gz user@remote-server:/path/to/deploy'
+                sh 'scp -i clé.pem ProjetJenkins/ProjetJenkins/monprojet-image.tar.gz user@remote-server:/path/to/deploy'
                 sh 'ssh -i clé.pem user@remote-server "docker load < /path/to/deploy/monprojet-image.tar.gz && docker run -d monprojet-image"'
             }
         }
