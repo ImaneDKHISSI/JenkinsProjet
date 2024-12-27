@@ -23,7 +23,7 @@ pipeline {
         stage('Docker Build') {
             steps {
                 dir('ProjetJenkins/ProjetJenkins') {
-                    sh 'docker build -t dkimane/monprojet-image:latest .'
+                    sh 'docker build -f ../Dockerfile -t dkimane/monprojet-image:latest .'
                 }
             }
         }
