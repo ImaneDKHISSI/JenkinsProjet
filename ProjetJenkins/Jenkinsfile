@@ -23,14 +23,14 @@ pipeline {
         stage('Docker Build') {
             steps {
                 dir('ProjetJenkins/ProjetJenkins') {
-                    sh 'docker build -t monprojet-image .'
+                    sh 'docker build -t dkimane/monprojet-image:latest .'
                 }
             }
         }
         stage('Docker Push') {
             steps {
                 withDockerRegistry([credentialsId: 'docker-hub-credentials', url: 'https://index.docker.io/v1/']) {
-                    sh 'docker push monprojet-image:latest'
+                    sh 'docker push dkimane/monprojet-image:latest'
                 }
             }
         }
