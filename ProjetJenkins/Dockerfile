@@ -8,19 +8,22 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
-# Copie uniquement les fichiers nécessaires pour restaurer les dépendances
+# Copie des fichiers nécessaires pour restaurer les dépendances
 COPY ["ProjetJenkins/ProjetJenkins/ProjetJenkins.csproj", "ProjetJenkins/"]
+COPY ["ProjetJenkins/TestUnitaire/TestUnitaire.csproj", "TestUnitaire/"]
+
 WORKDIR /src/ProjetJenkins
 
 # Restauration des dépendances
 RUN dotnet restore "ProjetJenkins.csproj"
+RUN dotnet restore "TestUnitaire/TestUnitaire.csproj"
 
 # Copie de tout le projet et compilation
 COPY . .
 WORKDIR /src/ProjetJenkins
 
-# Si vous avez des tests unitaires, assurez-vous que les dépendances comme 'Xunit' sont installées
-RUN dotnet test --no-build # Exécute les tests sans reconstruire l'application (optionnel si vous avez des tests)
+# Exécute les tests
+RUN dotnet test TestUnitaire/TestUnitaire.csproj --no-build
 
 # Publier le projet
 RUN dotnet publish "ProjetJenkins.csproj" -c Release -o /app/publish
