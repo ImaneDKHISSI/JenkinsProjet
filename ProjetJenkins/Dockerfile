@@ -11,11 +11,18 @@ WORKDIR /src
 # Copie uniquement les fichiers nécessaires pour restaurer les dépendances
 COPY ["ProjetJenkins/ProjetJenkins/ProjetJenkins.csproj", "ProjetJenkins/"]
 WORKDIR /src/ProjetJenkins
+
+# Restauration des dépendances
 RUN dotnet restore "ProjetJenkins.csproj"
 
 # Copie de tout le projet et compilation
 COPY . .
 WORKDIR /src/ProjetJenkins
+
+# Si vous avez des tests unitaires, assurez-vous que les dépendances comme 'Xunit' sont installées
+RUN dotnet test --no-build # Exécute les tests sans reconstruire l'application (optionnel si vous avez des tests)
+
+# Publier le projet
 RUN dotnet publish "ProjetJenkins.csproj" -c Release -o /app/publish
 
 # Étape 3 : Construire l'image finale
