@@ -10,20 +10,19 @@ WORKDIR /src
 
 # Copie des fichiers nécessaires pour restaurer les dépendances
 COPY ["ProjetJenkins/ProjetJenkins/ProjetJenkins.csproj", "ProjetJenkins/"]
-COPY ["ProjetJenkins/TestUnitaire/TestUnitaire.csproj", "TestUnitaire/"]
+COPY ["ProjetJenkins/TestUnitaire/TestUnitaire.csproj", "ProjetJenkins/TestUnitaire/"]
 
 WORKDIR /src/ProjetJenkins
 
 # Restauration des dépendances
 RUN dotnet restore "ProjetJenkins.csproj"
-RUN dotnet restore "TestUnitaire/TestUnitaire.csproj"
+RUN dotnet restore "ProjetJenkins/TestUnitaire/TestUnitaire.csproj"
 
 # Copie de tout le projet et compilation
 COPY . .
-WORKDIR /src/ProjetJenkins
 
 # Exécute les tests
-RUN dotnet test TestUnitaire/TestUnitaire.csproj --no-build
+RUN dotnet test ProjetJenkins/TestUnitaire/TestUnitaire.csproj --no-build
 
 # Publier le projet
 RUN dotnet publish "ProjetJenkins.csproj" -c Release -o /app/publish
