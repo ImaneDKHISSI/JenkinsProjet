@@ -12,6 +12,9 @@ WORKDIR /src
 COPY ProjetJenkins/ProjetJenkins/ProjetJenkins.csproj ProjetJenkins/
 COPY ProjetJenkins/TestUnitaire/TestUnitaire.csproj ProjetJenkins/TestUnitaire/
 
+# Nettoyage des fichiers précédents
+RUN dotnet clean ProjetJenkins/ProjetJenkins/ProjetJenkins.csproj
+
 # Restauration des dépendances
 WORKDIR /src/ProjetJenkins
 RUN dotnet restore "ProjetJenkins.csproj"
@@ -24,7 +27,7 @@ WORKDIR /src
 COPY . .
 RUN dotnet build "ProjetJenkins/ProjetJenkins.csproj" -c Release --no-restore
 
-# Exécute les tests
+# Exécute les tests unitaires
 RUN dotnet test ProjetJenkins/TestUnitaire/TestUnitaire.csproj --no-build
 
 # Publier le projet
