@@ -12,6 +12,9 @@ WORKDIR /src
 COPY ["ProjetJenkins/ProjetJenkins/ProjetJenkins.csproj", "ProjetJenkins/"]
 COPY ["ProjetJenkins/TestUnitaire/TestUnitaire.csproj", "ProjetJenkins/TestUnitaire/"]
 
+# Liste des fichiers copiés dans le conteneur Docker pour vérification
+RUN ls -R /src
+
 WORKDIR /src/ProjetJenkins
 
 # Restauration des dépendances
