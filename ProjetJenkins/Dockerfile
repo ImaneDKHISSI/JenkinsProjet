@@ -8,23 +8,20 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
-# Copier le fichier .csproj principal
+# Copier les fichiers .csproj
 COPY ProjetJenkins/ProjetJenkins/ProjetJenkins.csproj ProjetJenkins/ProjetJenkins/
-
-# Copier le fichier .csproj des tests unitaires
 COPY ProjetJenkins/TestUnitaire/TestUnitaire.csproj ProjetJenkins/TestUnitaire/
 
-# Vérification des fichiers copiés
-RUN ls -l ProjetJenkins/ProjetJenkins
-RUN ls -l ProjetJenkins/TestUnitaire
+# Nettoyer les caches NuGet
+RUN dotnet nuget locals all --clear
 
-# Nettoyage conditionnel
-RUN [ -f ProjetJenkins/ProjetJenkins/ProjetJenkins.csproj ] && dotnet clean ProjetJenkins/ProjetJenkins/ProjetJenkins.csproj || echo "ProjetJenkins.csproj not found"
+# Restaurer les dépendances
+RUN dotnet restore ProjetJenkins/ProjetJenkins/ProjetJenkins.csproj --force-evaluate --disable-parallel
 
-# Restauration des dépendances
-RUN dotnet restore ProjetJenkins/ProjetJenkins/ProjetJenkins.csproj
+# Installer explicitement le package manquant
+RUN dotnet add ProjetJenkins/ProjetJenkins/ProjetJenkins.csproj package Microsoft.CodeAnalysis.Analyzers --version 3.3.3
 
-# Copier tout le contenu de JenkinsProjet dans /src
+# Copier tout le contenu du projet
 COPY . .
 
 # Construire le projet principal
