@@ -1,17 +1,14 @@
 pipeline {
     agent any
     environment {
-        GIT_CREDENTIALS = 'GithubCredential'  // Remplacez par l'ID de vos identifiants Jenkins pour GitHub
+        GIT_CREDENTIALS = 'GithubCredential'
         DOCKER_IMAGE = 'dkimane/jenkins'
-        DOCKER_CREDENTIALS = 'dockerhub-credentials' // Remplacez par l'ID de vos identifiants Docker Hub
+        DOCKER_CREDENTIALS = 'dockerhub-credentials'
     }
     stages {
         stage('Clone Repository') {
             steps {
                 script {
-                    echo 'Configuring Git postBuffer for large files...'
-                    sh 'git config --global http.postBuffer 524288000'
-
                     echo 'Cloning repository...'
                     git branch: 'main',
                         url: 'https://github.com/ImaneDKHISSI/JenkinsProjet.git',
@@ -20,12 +17,11 @@ pipeline {
             }
         }
 
-        // Étape pour lister les fichiers après le clonage
-        stage('List Files') {
+        stage('Validate Files') {
             steps {
                 script {
-                    echo 'Listing all files in the repository...'
-                    sh 'ls -R' // Liste récursive de tous les fichiers
+                    echo 'Validating project structure...'
+                    sh 'ls -R ProjetJenkins' // Vérifiez les fichiers et répertoires
                 }
             }
         }
@@ -61,9 +57,7 @@ pipeline {
             steps {
                 script {
                     echo 'Building Docker image...'
-                    // Ajout d'une étape pour lister les fichiers dans le Dockerfile et vérifier les chemins
-                    sh 'ls -R /src'
-                    sh "docker build -t ${DOCKER_IMAGE} -f ProjetJenkins/Dockerfile ."
+                    sh "docker build -t ${DOCKER_IMAGE} -f ProjetJenkins/Dockerfile ./"
                 }
             }
         }

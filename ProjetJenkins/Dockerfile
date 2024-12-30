@@ -9,25 +9,26 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
 # Copie des fichiers nécessaires pour restaurer les dépendances
-COPY ["ProjetJenkins/ProjetJenkins/ProjetJenkins.csproj", "ProjetJenkins/"]
-COPY ["ProjetJenkins/TestUnitaire/TestUnitaire.csproj", "ProjetJenkins/TestUnitaire/"]
-
-# Liste des fichiers copiés dans le conteneur Docker pour vérification
-RUN ls -R /src
-
-WORKDIR /src/ProjetJenkins
+COPY ProjetJenkins/ProjetJenkins/ProjetJenkins.csproj ProjetJenkins/
+COPY ProjetJenkins/TestUnitaire/TestUnitaire.csproj ProjetJenkins/TestUnitaire/
 
 # Restauration des dépendances
+WORKDIR /src/ProjetJenkins
 RUN dotnet restore "ProjetJenkins.csproj"
-RUN dotnet restore "ProjetJenkins/TestUnitaire/TestUnitaire.csproj"
+
+WORKDIR /src/ProjetJenkins/TestUnitaire
+RUN dotnet restore "TestUnitaire.csproj"
 
 # Copie de tout le projet et compilation
+WORKDIR /src
 COPY . .
+RUN dotnet build "ProjetJenkins/ProjetJenkins.csproj" -c Release --no-restore
 
 # Exécute les tests
 RUN dotnet test ProjetJenkins/TestUnitaire/TestUnitaire.csproj --no-build
 
 # Publier le projet
+WORKDIR /src/ProjetJenkins
 RUN dotnet publish "ProjetJenkins.csproj" -c Release -o /app/publish
 
 # Étape 3 : Construire l'image finale
