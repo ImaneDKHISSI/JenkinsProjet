@@ -9,26 +9,26 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
 # Copier les fichiers .csproj
-COPY ProjetJenkins/ProjetJenkins/ProjetJenkins.csproj ProjetJenkins/ProjetJenkins/
+COPY ProjetJenkins/ProjetJenkins.csproj ProjetJenkins/
 COPY ProjetJenkins/TestUnitaire/TestUnitaire.csproj ProjetJenkins/TestUnitaire/
 
 # Nettoyer les caches NuGet
 RUN dotnet nuget locals all --clear
 
 # Restaurer les dépendances
-RUN dotnet restore ProjetJenkins/ProjetJenkins/ProjetJenkins.csproj --force-evaluate --disable-parallel
+RUN dotnet restore ProjetJenkins/ProjetJenkins.csproj --force-evaluate --disable-parallel
 
 # Copier tout le contenu du projet
 COPY . .
 
 # Construire le projet principal
-RUN dotnet build ProjetJenkins/ProjetJenkins/ProjetJenkins.csproj -c Release --no-restore
+RUN dotnet build ProjetJenkins/ProjetJenkins.csproj -c Release --no-restore
 
 # Exécuter les tests unitaires
 RUN dotnet test ProjetJenkins/TestUnitaire/TestUnitaire.csproj --no-build --logger:trx
 
 # Publier le projet principal
-RUN dotnet publish ProjetJenkins/ProjetJenkins/ProjetJenkins.csproj -c Release -o /app/publish
+RUN dotnet publish ProjetJenkins/ProjetJenkins.csproj -c Release -o /app/publish
 
 # Étape 3 : Construire l'image finale
 FROM base AS final
