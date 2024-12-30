@@ -1,6 +1,4 @@
-bin/
-obj/
-.git/
-.vs/
-.env
-docker-compose*
+**/bin
+**/obj
+*.user
+*.lock.json
