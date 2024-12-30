@@ -18,9 +18,6 @@ RUN dotnet nuget locals all --clear
 # Restaurer les dépendances
 RUN dotnet restore ProjetJenkins/ProjetJenkins/ProjetJenkins.csproj --force-evaluate --disable-parallel
 
-# Installer explicitement le package manquant
-RUN dotnet add ProjetJenkins/ProjetJenkins/ProjetJenkins.csproj package Microsoft.CodeAnalysis.Analyzers --version 3.3.3
-
 # Copier tout le contenu du projet
 COPY . .
 
@@ -28,7 +25,7 @@ COPY . .
 RUN dotnet build ProjetJenkins/ProjetJenkins/ProjetJenkins.csproj -c Release --no-restore
 
 # Exécuter les tests unitaires
-RUN dotnet test ProjetJenkins/TestUnitaire/TestUnitaire.csproj --no-build
+RUN dotnet test ProjetJenkins/TestUnitaire/TestUnitaire.csproj --no-build --logger:trx
 
 # Publier le projet principal
 RUN dotnet publish ProjetJenkins/ProjetJenkins/ProjetJenkins.csproj -c Release -o /app/publish
