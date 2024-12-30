@@ -1,38 +1,90 @@
 pipeline {
     agent any
+    environment {
+        GIT_CREDENTIALS = 'GithubCredential'  // Remplacez par l'ID de vos identifiants Jenkins pour GitHub
+        DOCKER_IMAGE = 'dkimane/jenkins'
+        DOCKER_CREDENTIALS = 'dockerhub-credentials' // Remplacez par l'ID de vos identifiants Docker Hub
+    }
     stages {
-        stage('Checkout') {
+        stage('Clone Repository') {
             steps {
-                checkout scm
-            }
-        }
-        stage('Build') {
-            steps {
-                dir('ProjetJenkins/ProjetJenkins') {
-                    sh 'dotnet build ProjetJenkins.csproj'
+                script {
+                    echo 'Configuring Git postBuffer for large files...'
+                    sh 'git config --global http.postBuffer 524288000'
+
+                    echo 'Cloning repository...'
+                    git branch: 'main',
+                        url: 'https://github.com/ImaneDKHISSI/JenkinsProjet.git',
+                        credentialsId: GIT_CREDENTIALS
                 }
             }
         }
-        stage('Test') {
+
+        // Étape pour lister les fichiers après le clonage
+        stage('List Files') {
             steps {
-                dir('ProjetJenkins/ProjetJenkins') {
-                    sh 'dotnet test ProjetJenkins.csproj'
+                script {
+                    echo 'Listing all files in the repository...'
+                    sh 'ls -R' // Liste récursive de tous les fichiers
                 }
             }
         }
-        stage('Docker Build') {
+
+        stage('Restore Dependencies for Unit Tests') {
             steps {
-                dir('ProjetJenkins/ProjetJenkins') {
-                    sh 'docker build -f ../Dockerfile -t dkimane/monprojet-image:latest .'
+                script {
+                    echo 'Restoring dependencies for TestUnitaire...'
+                    sh 'dotnet restore ProjetJenkins/TestUnitaire/TestUnitaire.csproj'
                 }
             }
         }
-        stage('Docker Push') {
+
+        stage('Run Unit Tests') {
             steps {
-                withDockerRegistry([credentialsId: 'docker-hub-credentials', url: 'https://index.docker.io/v1/']) {
-                    sh 'docker push dkimane/monprojet-image:latest'
+                script {
+                    echo 'Running unit tests...'
+                    sh 'dotnet test ProjetJenkins/TestUnitaire/TestUnitaire.csproj --no-build'
                 }
             }
+        }
+
+        stage('Restore Dependencies for Main Project') {
+            steps {
+                script {
+                    echo 'Restoring dependencies for ProjetJenkins...'
+                    sh 'dotnet restore ProjetJenkins/ProjetJenkins/ProjetJenkins.csproj'
+                }
+            }
+        }
+
+        stage('Build Docker Image') {
+            steps {
+                script {
+                    echo 'Building Docker image...'
+                    // Ajout d'une étape pour lister les fichiers dans le Dockerfile et vérifier les chemins
+                    sh 'ls -R /src'
+                    sh "docker build -t ${DOCKER_IMAGE} -f ProjetJenkins/Dockerfile ."
+                }
+            }
+        }
+
+        stage('Push to Docker Hub') {
+            steps {
+                script {
+                    echo 'Pushing Docker image to Docker Hub...'
+                    docker.withRegistry('', DOCKER_CREDENTIALS) {
+                        sh "docker push ${DOCKER_IMAGE}"
+                    }
+                }
+            }
+        }
+    }
+    post {
+        success {
+            echo 'Pipeline executed successfully! Docker image pushed to Docker Hub.'
+        }
+        failure {
+            echo 'Pipeline failed. Please check the logs for details.'
         }
     }
 }
