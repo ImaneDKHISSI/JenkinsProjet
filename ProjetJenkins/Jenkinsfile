@@ -57,7 +57,8 @@ pipeline {
             steps {
                 script {
                     echo 'Building Docker image...'
-                    sh 'docker build -t dkimane/jenkins -f ProjetJenkins/Dockerfile .'
+                            sh 'docker build -t dkimane/jenkins -f ProjetJenkins/Dockerfile ./ProjetJenkins'
+
                 }
             }
         }

@@ -9,19 +9,19 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
 # Copier les fichiers .csproj
-COPY ProjetJenkins/ProjetJenkins/ProjetJenkins.csproj ProjetJenkins/
+COPY ProjetJenkins/ProjetJenkins.csproj ProjetJenkins/
 
 # Restaurer les dépendances
-RUN dotnet restore ProjetJenkins/ProjetJenkins/ProjetJenkins.csproj
+RUN dotnet restore ProjetJenkins/ProjetJenkins.csproj
 
 # Copier tout le contenu du projet
 COPY ProjetJenkins/ ProjetJenkins/
 
 # Construire le projet principal
-RUN dotnet build ProjetJenkins/ProjetJenkins/ProjetJenkins.csproj -c Release --no-restore
+RUN dotnet build ProjetJenkins/ProjetJenkins.csproj -c Release --no-restore
 
 # Publier le projet principal
-RUN dotnet publish ProjetJenkins/ProjetJenkins/ProjetJenkins.csproj -c Release -o /app/publish
+RUN dotnet publish ProjetJenkins/ProjetJenkins.csproj -c Release -o /app/publish
 
 # Étape 3 : Construire l'image finale
 FROM base AS final
